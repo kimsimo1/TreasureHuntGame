@@ -6,8 +6,8 @@ let player;
 gameScene.init = function() {
   this.playerSpeed = 1.75;
   this.enemySpeed = 2;
-  this.enemyMaxY = 280;
-  this.enemyMinY = 80;
+  this.enemyMaxY = 330;
+  this.enemyMinY = 5;
 }
 
 // load asset files for our game
@@ -43,7 +43,7 @@ gameScene.create = function() {
   // group of enemies
   this.enemies = this.add.group({
     key: 'dragon',
-    repeat: 4,
+    repeat: 5,
     setXY: {
       x: 110,
       y: 100,
